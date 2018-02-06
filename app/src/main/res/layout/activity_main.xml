@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="	#FA8072"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.bignerdranch.dobro.generatorphrase.MainActivity">
+
+    <TextView
+        android:layout_above="@+id/button"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="150dp"
+        android:textSize="20sp"
+        android:text="Нажми для генерации отмазы"
+        android:textColor="#ffffff"
+        android:layout_centerInParent="true"
+        android:id="@+id/generate_phrase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <FrameLayout
+        android:id="@+id/button"
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/background_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_gravity="center"
+            android:id="@+id/btn_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:text="PRESS"
+            android:id="@+id/text_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </FrameLayout>
+
+</RelativeLayout>
