@@ -36,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
         ((FrameLayout)findViewById(R.id.button)).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                
                 Integer numb = random.nextInt(4);
                 textAlert.setText(array[(int)numb].toString());
             }
